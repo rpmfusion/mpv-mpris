@@ -1,6 +1,6 @@
 Name:           mpv-mpris
-Version:        0.5
-Release:        4%{?dist}
+Version:        0.6
+Release:        1%{?dist}
 Summary:        MPRIS plugin for mpv
 
 License:        MIT
@@ -44,6 +44,9 @@ ln -sf %{_libdir}/mpv/mpris.so %{buildroot}/%{_sysconfdir}/mpv/scripts/
 %doc README.md
 
 %changelog
+* Sat Nov 13 2021 Maxwell G <gotmax@e.email> - 0.6-1
+- Updated to version 0.6
+
 * Tue Aug 03 2021 RPM Fusion Release Engineering <leigh123linux@gmail.com> - 0.5-4
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_35_Mass_Rebuild
 
