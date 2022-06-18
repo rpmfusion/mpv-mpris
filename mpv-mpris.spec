@@ -1,5 +1,5 @@
 Name:           mpv-mpris
-Version:        0.8
+Version:        0.8.1
 Release:        1%{?dist}
 Summary:        MPRIS plugin for mpv
 
@@ -44,6 +44,9 @@ ln -sf %{_libdir}/mpv/mpris.so %{buildroot}/%{_sysconfdir}/mpv/scripts/
 %doc README.md
 
 %changelog
+* Sat Jun 18 2022 Jan Drögehoff <sentrycraft123@gmail.com> - 0.8.1-1
+- update to version 0.8.1
+
 * Fri Jun 17 2022 Jan Drögehoff <sentrycraft123@gmail.com> - 0.8-1
 - update to version 0.8
 
