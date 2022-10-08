@@ -1,6 +1,6 @@
 Name:           mpv-mpris
-Version:        0.8.1
-Release:        2%{?dist}
+Version:        0.9
+Release:        1%{?dist}
 Summary:        MPRIS plugin for mpv
 
 License:        MIT
@@ -25,7 +25,6 @@ many Linux DEs, such as Gnome and KDE.
 %autosetup
 
 %build
-%{set_build_flags}
 %make_build
 
 %install
@@ -44,6 +43,9 @@ ln -sf %{_libdir}/mpv/mpris.so %{buildroot}/%{_sysconfdir}/mpv/scripts/
 %doc README.md
 
 %changelog
+* Sat Oct 08 2022 Leigh Scott <leigh123linux@gmail.com> - 0.9-1
+- Update to version 0.9
+
 * Sun Aug 07 2022 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 0.8.1-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_37_Mass_Rebuild and ffmpeg
   5.1
