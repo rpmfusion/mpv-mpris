@@ -1,6 +1,6 @@
 Name:           mpv-mpris
-Version:        0.9
-Release:        2%{?dist}
+Version:        1.0
+Release:        1%{?dist}
 Summary:        MPRIS plugin for mpv
 
 License:        MIT
@@ -43,6 +43,9 @@ ln -sf %{_libdir}/mpv/mpris.so %{buildroot}/%{_sysconfdir}/mpv/scripts/
 %doc README.md
 
 %changelog
+* Thu Mar 30 2023 Jan Drögehoff <sentrycraft123@gmail.com> - 1.0-1
+- Update to version 1.0
+
 * Thu Nov 17 2022 Vitaly Zaitsev <vitaly@easycoding.org> - 0.9-2
 - Rebuilt due to mpv update.
 
