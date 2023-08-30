@@ -1,6 +1,6 @@
 Name:           mpv-mpris
-Version:        1.0
-Release:        2%{?dist}
+Version:        1.1
+Release:        1%{?dist}
 Summary:        MPRIS plugin for mpv
 
 License:        MIT
@@ -8,9 +8,9 @@ URL:            https://github.com/hoyon/mpv-mpris
 Source0:        %{url}/archive/%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires:  gcc
-BuildRequires:  mpv-libs-devel
-BuildRequires:  glib2-devel
-BuildRequires:  pkg-config
+BuildRequires:  pkgconfig(glib-2.0)
+BuildRequires:  pkgconfig(mpv)
+BuildRequires:  pkgconfig(libavformat)
 
 Requires:       mpv
 
@@ -43,6 +43,9 @@ ln -sf %{_libdir}/mpv/mpris.so %{buildroot}/%{_sysconfdir}/mpv/scripts/
 %doc README.md
 
 %changelog
+* Wed Aug 30 2023 Jan Drögehoff <sentrycraft123@gmail.com> - 1.1-1
+- Update to version 1.1
+
 * Wed Aug 02 2023 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 1.0-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_39_Mass_Rebuild
 
